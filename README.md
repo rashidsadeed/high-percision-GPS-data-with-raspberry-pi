@@ -16,13 +16,16 @@ the code is written in python, and you need the some libraries to run and use th
 the following commands will help you install those libraries
 
 > sudo pip install sparkfun-ublox-gps
+
 > sudo pip install pyserial
+
 > sudo pip install pyubx2
 
 ***NOTE: I'd advise to use a virtal environment to install the libraries and run the program to avoid contradictions 
 ***with other libraries you might be using. You can do so using the following commands,
 
 > python -m venv /path/to/new/virtual/environment
+
 > source your_environment_name/bin/activate
 
 after you activate the environment, go ahead and install the libraries, and then then run the program
