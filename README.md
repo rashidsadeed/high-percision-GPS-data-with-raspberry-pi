@@ -1,4 +1,4 @@
-<h1>High percision GPS data using raspberry pi</h1>
+<h1>High percision GPS data using Raspberry pi</h1>
 
 real time GPS data can be used in many different cases to accomodate location-bound systems and applications.
 and often the general navigation data (longitude, latitude, altitude) doesn't suffice, and more in-depth information 
@@ -13,7 +13,7 @@ class and payload to communicate with the GPS module and make the changes. to ma
 you would need to connect your GPS directly to your PC. depending on your GPS version, it might have a built in USB connection on board, otherwise you would need 
 to use the TTL-USB converter board. 
 
-<span style="color:red;">Not every GPS module can output RAWX data, please refer to the documentation and data sheets for your particular GPS model</span>
+**Not every GPS module can output RAWX data, please refer to the documentation and data sheets for your particular GPS model**
 
 the code is written in python, and you need the some libraries to run and use the application.
 the following commands will help you install those libraries
@@ -25,8 +25,8 @@ the following commands will help you install those libraries
 > sudo pip install pyubx2
 
 
-<span style="color:red;">**NOTE: I'd advise to use a virtal environment to install the libraries and run the program to avoid contradictions**</span>
-<span style="color:red;">**with other libraries you might be using. You can do so using the following commands**</span>
+**NOTE: I'd advise to use a virtal environment to install the libraries and run the program to avoid contradictions**
+**with other libraries you might be using. You can do so using the following commands**
 
 
 > python -m venv /path/to/new/virtual/environment
