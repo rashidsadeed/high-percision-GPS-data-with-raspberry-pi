@@ -1,6 +1,6 @@
 <h1>High percision GPS data using raspberry pi</h1>
 
-real time GPS data can be used in many different cases to accomodate location-boun systems and applications.
+real time GPS data can be used in many different cases to accomodate location-bound systems and applications.
 and often the general navigation data (longitude, latitude, altitude) doesn't suffice, and more in depth information 
 such as psuedorange measurement, carrier phase measurement,  GNSS_ID etc... might be required by the application.
 
