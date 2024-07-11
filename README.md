@@ -21,8 +21,10 @@ the following commands will help you install those libraries
 
 > sudo pip install pyubx2
 
-***NOTE: I'd advise to use a virtal environment to install the libraries and run the program to avoid contradictions 
-***with other libraries you might be using. You can do so using the following commands,
+''' diff
+- __NOTE: I'd advise to use a virtal environment to install the libraries and run the program to avoid contradictions__
+- __with other libraries you might be using. You can do so using the following commands,__
+'''
 
 > python -m venv /path/to/new/virtual/environment
 
