@@ -1,4 +1,4 @@
-#High percision GPS data using raspberry pi
+<h1>High percision GPS data using raspberry pi</h1>
 
 real time GPS data can be used in many different cases to accomodate location-boun systems and applications.
 and often the general navigation data (longitude, latitude, altitude) doesn't suffice, and more in depth information 
@@ -21,10 +21,10 @@ the following commands will help you install those libraries
 
 > sudo pip install pyubx2
 
-''' diff
-- __NOTE: I'd advise to use a virtal environment to install the libraries and run the program to avoid contradictions__
-- __with other libraries you might be using. You can do so using the following commands,__
-'''
+
+<span style="color:red;">**NOTE: I'd advise to use a virtal environment to install the libraries and run the program to avoid contradictions**</span>
+<span style="color:red;">**with other libraries you might be using. You can do so using the following commands**</span>
+
 
 > python -m venv /path/to/new/virtual/environment
 
