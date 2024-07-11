@@ -1,16 +1,19 @@
 <h1>High percision GPS data using raspberry pi</h1>
 
 real time GPS data can be used in many different cases to accomodate location-bound systems and applications.
-and often the general navigation data (longitude, latitude, altitude) doesn't suffice, and more in depth information 
-such as psuedorange measurement, carrier phase measurement,  GNSS_ID etc... might be required by the application.
+and often the general navigation data (longitude, latitude, altitude) doesn't suffice, and more in-depth information 
+such as pseudorange measurement, carrier phase measurement,  GNSS_ID etc... might be required by the application.
 
-Here I have used a Ublox neo-M8P high percision GPS module connected to a raspberryPi to get GPS data
-including navigation and raw data in real time. the GPS module is connected via a seiral port and operates at 
-8Hz. you can change the frequency and the opertaion baudrate of the GPS module as per your needs. 
-
+Here I have used a Ublox neo-M8P high percision GPS module connected to a Raspberry Pi to get GPS data
+including navigation(UBX-RXM-RAWX) and raw data(UBX-NAV-PVT) in real time. The module transmitts data in UBX format to the Raspberry Pi, which is then parsed to be human readable.
+the GPS module is connected via a seiral port and operates at 8Hz.you can change the frequency and the opertaion baudrate of the GPS module as per your needs. 
 in order to make said changes, you either need to use the Ublox's "u-center" app which is quite helpfull and full of 
 functionality, or you could do so programatically, in which case you would need to know the specific UBX message
-class and payload to communicate with the GPS module and make the changes. 
+class and payload to communicate with the GPS module and make the changes. to make changes to the GPS's configutaion using the "u-center" windows application,
+you would need to connect your GPS directly to your PC. depending on your GPS version, it might have a built in USB connection on board, otherwise you would need 
+to use the TTL-USB converter board. 
+
+<span style="color:red;">Not every GPS module can output RAWX data, please refer to the documentation and data sheets for your particular GPS model</span>
 
 the code is written in python, and you need the some libraries to run and use the application.
 the following commands will help you install those libraries
