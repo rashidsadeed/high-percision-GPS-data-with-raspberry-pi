@@ -14,7 +14,7 @@ you would need to connect your GPS directly to your PC. depending on your GPS ve
 to use the TTL-USB converter board. 
 
 
-**NOTE: I'd advise to use a virtal environment to install the libraries and run the program to avoid contradictions**
+**NOTE: I'd advise using a virtal environment to install the libraries and run the program to avoid contradictions**
 **with other libraries you might be using. You can do so using the following commands**
 
 
